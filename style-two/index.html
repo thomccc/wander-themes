@@ -3,15 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="wander-page" content="style-two">
   <title>Desert Spirit Vacations</title>
   <link rel="stylesheet" href="/src/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Local fallback fonts (in case Google Fonts is blocked in production) */
+    @font-face {
+      font-family: 'Lora';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('/fonts/style-two/Lora-latin.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('/fonts/style-two/PublicSans-latin.woff2') format('woff2');
+    }
     :root {
-      /* Local fallback font-face is defined in style-two.html (root entry).
-         This folder entry is primarily for production hosts that serve /style-two/ as an index. */
       --font-title: 'Lora', serif;
       --font-body: 'Public Sans', sans-serif;
     }
