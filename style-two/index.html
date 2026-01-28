@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desert Spirit Vacations</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-title: 'Libre Baskerville', serif;
+      --font-body: 'Public Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-wrapper">
+        <img src="http://localhost:3845/assets/ed3f4cd9a537c34d4a62dc230718a5c6ea1e009a.png" alt="Desert Spirit" class="logo">
+      </div>
+      <nav class="nav-right">
+        <button class="btn-secondary">List on Desert Spirit</button>
+        <button class="btn-icon" aria-label="Menu">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 4h10M3 8h10M3 12h10"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background">
+      <img src="http://localhost:3845/assets/7beca9786add4467ab2f128061298abe0df6c16e.png" alt="Desert landscape" class="hero-image">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Desert Spirit Vacations</h1>
+        <p class="hero-subtitle">Distinctive and extraordinary properties for every taste. Your roadtrip to the desert begins</p>
+      </div>
+      <div class="search-bar">
+        <div class="search-field search-field-location">
+          <div class="search-icon-wrapper">
+            <img src="http://localhost:3845/assets/0baecca1de8b32d12d09ff14a8961569f20fa9dc.svg" alt="Search" class="search-icon-img">
+          </div>
+          <div class="search-input-wrapper">
+            <span class="search-label">Anywhere</span>
+            <span class="search-value">Los Angeles</span>
+          </div>
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-field search-field-time">
+          <span class="search-label">Anytime</span>
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-field search-field-guests">
+          <span class="search-label">Any guests</span>
+          <button class="btn-primary btn-search">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Grid Section 1 -->
+  <section class="property-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sunny paradise</h2>
+        <div class="section-controls">
+          <button class="btn-icon-small" aria-label="Previous">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 3L5 7l3 4"/>
+            </svg>
+          </button>
+          <button class="btn-icon-small" aria-label="Next">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 3l3 4-3 4"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="property-grid">
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat property cards -->
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <button class="btn-secondary">See more properties</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Grid Section 2 -->
+  <section class="property-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mountainous adventures</h2>
+        <div class="section-controls">
+          <button class="btn-icon-small" aria-label="Previous">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 3L5 7l3 4"/>
+            </svg>
+          </button>
+          <button class="btn-icon-small" aria-label="Next">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 3l3 4-3 4"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="property-grid">
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-image-wrapper">
+            <img src="http://localhost:3845/assets/d9270afd40f0ca13cc16e13b4800ec267622a0ac.png" alt="Property" class="property-image">
+            <div class="image-progress">
+              <div class="image-progress-bar"></div>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-title">Home in Newport beach</h3>
+            <div class="property-meta">
+              <span class="property-price">$1,500 for 4 nights</span>
+              <span class="property-separator">•</span>
+              <div class="property-rating">
+                <svg class="star-icon" width="12" height="12" viewBox="0 0 12 12" fill="#5f5f5f">
+                  <path d="M6 0l1.8 3.6L12 4.2 9 7.2l.6 3.6L6 9l-3.6 1.8.6-3.6L0 4.2l4.2-.6L6 0z"/>
+                </svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="property-details">
+              <span>4 bedrooms</span>
+              <span class="property-separator">•</span>
+              <span>6 beds</span>
+              <span class="property-separator">•</span>
+              <span>4 baths</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="testimonials-title">Trusted by 500 guests.<br>And counting.</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Don't hesitate to book this place! It was so worth it to have a quiet spot right on the lake with easy water access. We can't wait to stay again with Big Lake Properties."</p>
+          <p class="testimonial-author">Buddy</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Don't hesitate to book this place! It was so worth it to have a quiet spot right on the lake with easy water access. We can't wait to stay again with Big Lake Properties."</p>
+          <p class="testimonial-author">Buddy</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Don't hesitate to book this place! It was so worth it to have a quiet spot right on the lake with easy water access. We can't wait to stay again with Big Lake Properties."</p>
+          <p class="testimonial-author">Buddy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Section -->
+  <section class="metrics-section">
+    <div class="metrics-container">
+      <div class="metrics-background">
+        <img src="http://localhost:3845/assets/de376b1b122faee1b74545b51ef5880c75764b7d.png" alt="Background" class="metrics-bg-image">
+        <div class="metrics-overlay"></div>
+      </div>
+      <div class="metrics-content">
+        <div class="metrics-text">
+          <h2 class="metrics-title">A great guest experience<br>becomes great numbers.</h2>
+        </div>
+        <div class="metrics-cards">
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-value">4.9</div>
+              <div class="metric-label">Average rating</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">500+</div>
+              <div class="metric-label">Happy guests</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">1,000+</div>
+              <div class="metric-label">Nights hosted</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">20</div>
+              <div class="metric-label">Dream houses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-header">
+        <div class="about-text">
+          <h2 class="about-title">We're here,<br>so you can slow down.</h2>
+          <p class="about-subtitle">Founded in Panama City Beach and serving the 30A and Emerald Coast areas.</p>
+        </div>
+        <div class="about-buttons">
+          <button class="btn-primary">List with us</button>
+          <button class="btn-secondary">Learn more</button>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="http://localhost:3845/assets/7beca9786add4467ab2f128061298abe0df6c16e.png" alt="About us">
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <h3 class="about-card-title">In the heart of Florida's Gulf Coast</h3>
+            <p class="about-card-text">Downtime Vacation Rentals operates in the heart of Florida's Gulf Coast, a place where sugar-white beaches meet laid-back coastal towns.</p>
+          </div>
+          <div class="about-card">
+            <h3 class="about-card-title">The best guest experience</h3>
+            <p class="about-card-text">When someone books a Downtime stay, they're not just getting a rental property; they're stepping into the rhythm of our coastal community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-title-wrapper">
+          <h2 class="contact-title">We are here for you.<br>Get in touch.</h2>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label class="form-label">Enter your name*</label>
+            <input type="text" class="form-input" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Enter your phone number*</label>
+            <input type="tel" class="form-input" placeholder="Phone">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Enter your email*</label>
+            <input type="email" class="form-input" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Let us know your question</label>
+            <textarea class="form-textarea" placeholder="Write your message here..."></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Why are you contacting us?</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="contact-reason" value="list" checked>
+                <span class="radio-custom"></span>
+                <span>To list my property</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="contact-reason" value="bills">
+                <span class="radio-custom"></span>
+                <span>To pay my bills</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="contact-reason" value="investments">
+                <span class="radio-custom"></span>
+                <span>To manage my investments</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span>I agree to the terms and conditions</span>
+            </label>
+          </div>
+          <button type="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-background" aria-hidden="true">
+          <div class="cta-bg-wrapper">
+            <img src="http://localhost:3845/assets/f0c3ff3fd6a99b4cb9a9f0f5d9ab623c677a0486.png" alt="CTA background" class="cta-bg-image">
+          </div>
+          <div class="cta-overlay"></div>
+        </div>
+        <div class="cta-content">
+          <p class="cta-label">Desert Spirit</p>
+          <h2 class="cta-title">Join our family.<br>Deliver an experience like no other.</h2>
+          <div class="cta-button-wrapper">
+            <button class="btn-primary btn-white">Join the program</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-social">
+      <div class="container">
+        <p class="footer-social-label">Follow us</p>
+        <div class="footer-social-links">
+          <a href="#" class="footer-link">X (Twitter)</a>
+          <a href="#" class="footer-link">Instagram</a>
+          <a href="#" class="footer-link">TikTok</a>
+          <a href="#" class="footer-link">LinkedIn</a>
+          <a href="#" class="footer-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <img src="http://localhost:3845/assets/ed3f4cd9a537c34d4a62dc230718a5c6ea1e009a.png" alt="Desert Spirit" class="footer-logo-img">
+            </div>
+          </div>
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h4 class="footer-heading">Company</h4>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">About</a></li>
+                <li><a href="#" class="footer-link">List with us</a></li>
+                <li><a href="#" class="footer-link">Contact</a></li>
+                <li><a href="#" class="footer-link">Property manager portal</a></li>
+                <li><a href="#" class="footer-link">Owner portal</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-heading">Resources</h4>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Activities in Northern Kentucky</a></li>
+                <li><a href="#" class="footer-link">Activities in Nashville</a></li>
+                <li><a href="#" class="footer-link">Sitemap</a></li>
+                <li><a href="#" class="footer-link">Terms of service</a></li>
+                <li><a href="#" class="footer-link">Privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-heading">Contact us</h4>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Send us a message</a></li>
+                <li><a href="#" class="footer-link">info@downtimevacationrentals.com</a></li>
+                <li><a href="#" class="footer-link">603 - 770 -9939</a></li>
+                <li class="footer-address">219 Surfisde DR, Myrtle Beach, South Carolina</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-powered">Powered by <span class="footer-brand">Wander Sites</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+
