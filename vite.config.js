@@ -6,8 +6,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         home: path.resolve(__dirname, 'index.html'),
-        styleTwo: path.resolve(__dirname, 'style-two.html'),
-        styleThree: path.resolve(__dirname, 'style-three.html'),
+        styleTwo: path.resolve(__dirname, 'style-two/index.html'),
+        styleThree: path.resolve(__dirname, 'style-three/index.html'),
       },
     },
   },
@@ -21,16 +21,16 @@ export default defineConfig({
       configureServer(server) {
         server.middlewares.use((req, _res, next) => {
           const url = req.url?.split('?')[0];
-          if (url === '/style-two') req.url = '/style-two.html';
-          if (url === '/style-three') req.url = '/style-three.html';
+          if (url === '/style-two') req.url = '/style-two/';
+          if (url === '/style-three') req.url = '/style-three/';
           next();
         });
       },
       configurePreviewServer(server) {
         server.middlewares.use((req, _res, next) => {
           const url = req.url?.split('?')[0];
-          if (url === '/style-two') req.url = '/style-two.html';
-          if (url === '/style-three') req.url = '/style-three.html';
+          if (url === '/style-two') req.url = '/style-two/';
+          if (url === '/style-three') req.url = '/style-three/';
           next();
         });
       },
