@@ -7,8 +7,23 @@
   <link rel="stylesheet" href="/src/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Self-hosted fonts (Google Fonts downloads) to avoid relying on fonts.googleapis.com */
+    @font-face {
+      font-family: 'Libre Baskerville';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('/fonts/style-two/LibreBaskerville-latin.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('/fonts/style-two/PublicSans-latin.woff2') format('woff2');
+    }
     :root {
       --font-title: 'Libre Baskerville', serif;
       --font-body: 'Public Sans', sans-serif;
