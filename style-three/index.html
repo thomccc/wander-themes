@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/src/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* Self-hosted fonts (Google Fonts downloads) to avoid relying on fonts.googleapis.com */
     @font-face {
@@ -18,13 +18,20 @@
       font-display: swap;
       src: url('/fonts/style-three/Urbanist-latin.woff2') format('woff2');
     }
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 300 700;
+      font-display: swap;
+      src: url('/fonts/style-three/Manrope-latin.woff2') format('woff2');
+    }
     :root {
       --font-title: 'Urbanist', sans-serif;
-      --font-body: 'Urbanist', sans-serif;
+      --font-body: 'Manrope', sans-serif;
     }
   </style>
 </head>
-<body style="--font-title: 'Urbanist', sans-serif; --font-body: 'Urbanist', sans-serif;">
+<body style="--font-title: 'Urbanist', sans-serif; --font-body: 'Manrope', sans-serif;">
   <!-- Header -->
   <header class="header">
     <div class="header-container">
