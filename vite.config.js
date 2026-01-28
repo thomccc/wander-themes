@@ -23,6 +23,8 @@ export default defineConfig({
           const url = req.url?.split('?')[0];
           if (url === '/style-two') req.url = '/style-two/';
           if (url === '/style-three') req.url = '/style-three/';
+          if (url === '/style-two.html') req.url = '/style-two/';
+          if (url === '/style-three.html') req.url = '/style-three/';
           next();
         });
       },
@@ -31,6 +33,8 @@ export default defineConfig({
           const url = req.url?.split('?')[0];
           if (url === '/style-two') req.url = '/style-two/';
           if (url === '/style-three') req.url = '/style-three/';
+          if (url === '/style-two.html') req.url = '/style-two/';
+          if (url === '/style-three.html') req.url = '/style-three/';
           next();
         });
       },
